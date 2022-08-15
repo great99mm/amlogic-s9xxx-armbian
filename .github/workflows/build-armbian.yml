@@ -12,7 +12,7 @@ on:
       set_release:
         description: "Select OS Release."
         required: false
-        default: "jammy"
+        default: "bullseye"
         type: choice
         options:
           - jammy
@@ -20,7 +20,7 @@ on:
       armbian_soc:
         description: "Select Amlogic SoC."
         required: false
-        default: "all"
+        default: "s905d"
         type: choice
         options:
           - all
@@ -78,7 +78,7 @@ on:
         default: ""
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Shanghai
 
 jobs:
   build:
